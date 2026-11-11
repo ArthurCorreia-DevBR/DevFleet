@@ -31,3 +31,23 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### ENVIRONMENT AND SECRETS ###
+.env
+.env.*
+!.env.example
+
+secrets/
+*.pem
+*.key
+*.p12
+*.jks
+
+### SPRING BOOT - LOCAL CONFIGURATION ###
+src/main/resources/application-local.properties
+src/main/resources/application-secrets.properties
+src/main/resources/application-*.local.properties
+
+### LOGS ###
+*.log
+logs/
