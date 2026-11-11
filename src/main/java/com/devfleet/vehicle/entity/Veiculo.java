@@ -10,7 +10,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "tb_veiculo")
+@Table(name = "tb_veiculos")
 public class Veiculo {
 
     //Id gerado automaticamente.
