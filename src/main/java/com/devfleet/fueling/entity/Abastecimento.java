@@ -3,10 +3,16 @@ package com.devfleet.fueling.entity;
 import com.devfleet.fueling.enums.TipoCombustivel;
 import com.devfleet.vehicle.entity.Veiculo;
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+@Builder
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "tb_abastecimentos")
 public class Abastecimento {

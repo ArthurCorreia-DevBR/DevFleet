@@ -2,9 +2,15 @@ package com.devfleet.driver.entity;
 
 import com.devfleet.driver.enums.StatusMotorista;
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.time.LocalDate;
 
+@Builder
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "tb_motoristas")
 public class Motorista {

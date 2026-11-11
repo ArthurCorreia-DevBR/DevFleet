@@ -4,9 +4,15 @@ import com.devfleet.driver.entity.Motorista;
 import com.devfleet.trip.enums.StatusViagem;
 import com.devfleet.vehicle.entity.Veiculo;
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
+@Builder
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "tb_viagens")
 public class Viagem {

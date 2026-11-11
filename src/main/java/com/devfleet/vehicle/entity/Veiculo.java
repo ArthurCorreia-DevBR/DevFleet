@@ -2,7 +2,13 @@ package com.devfleet.vehicle.entity;
 
 import com.devfleet.vehicle.enums.StatusVeiculo;
 import jakarta.persistence.*;
+import lombok.*;
 
+@Builder
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "tb_veiculo")
 public class Veiculo {
