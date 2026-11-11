@@ -3,6 +3,7 @@ package com.devfleet.maintenance.entity;
 import com.devfleet.maintenance.enums.StatusManutencao;
 import com.devfleet.maintenance.enums.TipoManutencao;
 import com.devfleet.vehicle.entity.Veiculo;
+import com.devfleet.workshop.entity.Oficina;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -61,4 +62,10 @@ public class Manutencao {
     @JoinColumn(name = "veiculo_id", nullable = false)
     private Veiculo veiculo;
 
+    //ManyToOne -> Uma oficina pode fazer várias manutenções
+    //Uma manutenção pode ser realizada internamente ou por uma oficina externa.
+    //JoinColumn -> chave_estrangeira.
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "oficina_id")
+    private Oficina oficina;
 }
