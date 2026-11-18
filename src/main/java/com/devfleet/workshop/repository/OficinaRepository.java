@@ -6,4 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface OficinaRepository extends JpaRepository<Oficina, Long> {
+
+    public boolean existsByCnpj(String cnpj);
+
 }
